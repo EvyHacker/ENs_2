@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression ACI">
+    <parameter name="browser" value="${browser}" />
+    <parameter name="environment" value="${environment}"/>
+    <parameter name="aciSingleVisa" value="aciSingleVisa"/>
+    <parameter name="aciSingleMasterCard" value="aciSingleMasterCard"/>
+    <parameter name="aciSingleDiscover" value="aciSingleDiscover"/>
+    <parameter name="aciSingleAmex" value="aciSingleAmex"/>
+    <parameter name="aciSingleErrors" value="aciSingleErrors"/>
+    <parameter name="aciRecurringVisa" value="aciRecurringVisa"/>
+    <parameter name="aciRecurringMasterCard" value="aciRecurringMasterCard"/>
+    <parameter name="aciRecurringDiscover" value="aciRecurringDiscover"/>
+    <parameter name="aciRecurringAmex" value="aciRecurringAmex"/>
+    <parameter name="aciRecurringACH" value="aciRecurringACH"/>
+    <parameter name="aciSingleACH" value="aciSingleACH"/>
+
+    <test name="Donations ACI"  preserve-order="true">
+        <groups>
+            <run>
+                <include name="aci"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.fnoor.FundraisingTest.ACI" >
+                <methods>
+                    <include name="aciSingleVisa" />
+                    <include name="aciSingleMasterCard" />
+                    <include name="aciSingleDiscover" />
+                    <include name="aciSingleAmex" />
+                    <include name="aciRecurringVisa" />
+                    <include name="aciSingleErrors" />
+                    <include name="aciRecurringVisa" />
+                    <include name="aciRecurringMasterCard" />
+                    <include name="aciRecurringDiscover" />
+                    <include name="aciRecurringAmex" />
+                    <include name="aciRecurringACH" />
+                    <include name="aciSingleACH" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

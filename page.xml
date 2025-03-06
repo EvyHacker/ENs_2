@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression IATS">
+    <parameter name="browser" value="${browser}" />
+    <parameter name="environment" value="${environment}"/>
+    <parameter name="pageDonation" value="pageDonation"/>
+<!--    <parameter name="IATSRecurring" value="IATSRecurring"/>-->
+<!--    <parameter name="IATSACHSingle" value="IATSACHSingle"/>-->
+<!--    <parameter name="IATSACHRecurring" value="IATSACHRecurring"/>-->
+<!--    <parameter name="IATSACHRecurPaymenttypelogic" value="IATSACHRecurPaymenttypelogic"/>-->
+<!--    <parameter name="IATSSingleOtherAUD" value="IATSSingleOtherAUD"/>-->
+<!--    <parameter name="IATSSingleOtherCAD" value="IATSSingleOtherCAD"/>-->
+<!--    <parameter name="IATSSingleOtherUSD" value="IATSSingleOtherUSD"/>-->
+<!--    <parameter name="IATSSingleCurrencyBasedUSD" value="IATSSingleCurrencyBasedUSD"/>-->
+<!--    <parameter name="IATSSingleCurrencyBadGatewayCAD" value="IATSSingleCurrencyBadGatewayCAD"/>-->
+<!--    <parameter name="IATSvalidateTransaction" value="IATSvalidateTransaction"/>-->
+    <test name="PAGE"  preserve-order="true">
+        <groups>
+            <run>
+                <include name="page"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.fnoor.PageBuilder.AddDonationPage" >
+                <methods>
+                    <include name="pageDonation" />
+<!--                    <include name="IATSRecurring" />-->
+<!--                    <include name="IATSACHSingle" />-->
+<!--                    <include name="IATSACHRecurring" />-->
+<!--                    <include name="IATSACHRecurPaymenttypelogic" />-->
+<!--                    <include name="IATSSingleOtherAUD" />-->
+<!--                    <include name="IATSSingleOtherCAD" />-->
+<!--                    <include name="IATSSingleOtherUSD" />-->
+<!--                    <include name="IATSSingleCurrencyBasedUSD" />-->
+<!--                    <include name="IATSSingleCurrencyBadGatewayCAD" />-->
+<!--                    <include name="IATSvalidateTransaction" />-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="STRIPE chrome" parallel="tests" thread-count="2">
+    <test name="Donations STRIPE">
+    <parameter name="browser" value="chrome" />
+
+
+
+    </test>
+    <test name="STRIPE firefox" >
+        <parameter name="browser" value="firefox" />
+
+        <classes>
+            <class name="com.fnoor.FundraisingTest.STRIPE" >
+                <methods>
+                    <include name="stripeSingle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
