@@ -447,7 +447,7 @@ public class FundraisingPageDriver {
 
                 System.setProperty("webdriver.chrome.driver", "webdrivers/linux/chromedriver");
                 ChromeOptions options = new ChromeOptions();
-                options.setBinary("'/Users/evyens/ENS/ENs/webdrivers/linux/Google Chrome for Testing.app'");
+                options.setBinary("'/Users/evyens/ENS/ENs/webdrivers/linux/chromedriver'");
                // options.addArguments("start-maximized");
                 options.addArguments("disable-infobars");
                 options.addArguments("--disable-web-security");
