@@ -452,6 +452,7 @@ public class FundraisingPageDriver {
                 options.addArguments("disable-infobars");
                 options.addArguments("--disable-web-security");
                 options.addArguments("--disable-cache");
+                options.addArguments("--headless");
                 //options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
                // options.setExperimentalOption("useAutomationExtension", false);
                 options.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
